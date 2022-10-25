@@ -14,6 +14,7 @@
 		41FF97CE290014BF00B11FF5 /* FindMyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97CC290014BF00B11FF5 /* FindMyCar.xcdatamodeld */; };
 		41FF97D0290014C000B11FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FF97CF290014C000B11FF5 /* Assets.xcassets */; };
 		41FF97D3290014C000B11FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FF97D1290014C000B11FF5 /* LaunchScreen.storyboard */; };
+		41FF97DB29001AAB00B11FF5 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97DA29001AAB00B11FF5 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		41FF97CF290014C000B11FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41FF97D2290014C000B11FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41FF97D4290014C000B11FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FF97DA29001AAB00B11FF5 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				41FF97C3290014BF00B11FF5 /* AppDelegate.swift */,
 				41FF97C5290014BF00B11FF5 /* SceneDelegate.swift */,
-				41FF97C7290014BF00B11FF5 /* ViewController.swift */,
 				41FF97C9290014BF00B11FF5 /* Main.storyboard */,
+				41FF97C7290014BF00B11FF5 /* ViewController.swift */,
 				41FF97CF290014C000B11FF5 /* Assets.xcassets */,
 				41FF97D1290014C000B11FF5 /* LaunchScreen.storyboard */,
 				41FF97D4290014C000B11FF5 /* Info.plist */,
 				41FF97CC290014BF00B11FF5 /* FindMyCar.xcdatamodeld */,
+				41FF97DA29001AAB00B11FF5 /* Entity.swift */,
 			);
 			path = FindMyCar;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41FF97C8290014BF00B11FF5 /* ViewController.swift in Sources */,
+				41FF97DB29001AAB00B11FF5 /* Entity.swift in Sources */,
 				41FF97C4290014BF00B11FF5 /* AppDelegate.swift in Sources */,
 				41FF97C6290014BF00B11FF5 /* SceneDelegate.swift in Sources */,
 				41FF97CE290014BF00B11FF5 /* FindMyCar.xcdatamodeld in Sources */,
