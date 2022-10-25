@@ -11,6 +11,7 @@ import Vision
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ResulttextView: UITextView!
     
+    @IBAction func saveButtonClicked(_ sender: UIBarButtonItem) {
+        
+        UserDefaults.standard.set(entryTextView.text, forKey: "entry")
+        
+        defaults.set(ResulttextView.text, forKey: "Text")
+        
+    }
     
     @IBAction func selectPhotoFromGalleryPressed(_ sender: UIButton) {
         

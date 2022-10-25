@@ -103,11 +103,19 @@
                             <constraint firstItem="A4j-Rt-Qht" firstAttribute="top" secondItem="Xby-Im-Ha7" secondAttribute="top" id="ub4-0z-4pf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mfJ-1V-3l5"/>
+                    <navigationItem key="navigationItem" id="mfJ-1V-3l5">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="MW4-n3-LO4">
+                            <color key="tintColor" red="0.25098039220000001" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveButtonClicked:" destination="BYZ-38-t0r" id="6WZ-JN-6PW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ResulttextView" destination="fkc-U4-yQe" id="wli-eJ-1gv"/>
                         <outlet property="entryTextView" destination="j9G-wo-XbL" id="oIY-aK-Smx"/>
                         <outlet property="photo" destination="w6I-SN-so3" id="Ud5-3J-hku"/>
+                        <outlet property="saveButton" destination="MW4-n3-LO4" id="BR4-99-SMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
