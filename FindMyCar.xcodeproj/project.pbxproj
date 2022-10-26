@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410239192909356200E4B9AB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 410239182909356200E4B9AB /* IQKeyboardManagerSwift */; };
 		41FF97C4290014BF00B11FF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97C3290014BF00B11FF5 /* AppDelegate.swift */; };
 		41FF97C6290014BF00B11FF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97C5290014BF00B11FF5 /* SceneDelegate.swift */; };
 		41FF97C8290014BF00B11FF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97C7290014BF00B11FF5 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410239192909356200E4B9AB /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = FindMyCar;
+			packageProductDependencies = (
+				410239182909356200E4B9AB /* IQKeyboardManagerSwift */,
+			);
 			productName = FindMyCar;
 			productReference = 41FF97C0290014BF00B11FF5 /* FindMyCar.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 41FF97B7290014BF00B11FF5;
+			packageReferences = (
+				410239172909356200E4B9AB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 41FF97C1290014BF00B11FF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		410239172909356200E4B9AB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		410239182909356200E4B9AB /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 410239172909356200E4B9AB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		41FF97CC290014BF00B11FF5 /* FindMyCar.xcdatamodeld */ = {
