@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		410239192909356200E4B9AB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 410239182909356200E4B9AB /* IQKeyboardManagerSwift */; };
+		41BC27EA293889600010C5DC /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BC27E9293889600010C5DC /* AuthenticationServices.framework */; };
+		41BC27ED293889600010C5DC /* AccountAuthenticationModificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BC27EC293889600010C5DC /* AccountAuthenticationModificationViewController.swift */; };
+		41BC27F0293889600010C5DC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BC27EE293889600010C5DC /* MainInterface.storyboard */; };
+		41BC27F4293889600010C5DC /* Mert Polat.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 41BC27E7293889600010C5DC /* Mert Polat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		41FF97C4290014BF00B11FF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97C3290014BF00B11FF5 /* AppDelegate.swift */; };
 		41FF97C6290014BF00B11FF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97C5290014BF00B11FF5 /* SceneDelegate.swift */; };
 		41FF97C8290014BF00B11FF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97C7290014BF00B11FF5 /* ViewController.swift */; };
@@ -18,7 +22,36 @@
 		41FF97DB29001AAB00B11FF5 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF97DA29001AAB00B11FF5 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		41BC27F2293889600010C5DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41FF97B8290014BF00B11FF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41BC27E6293889600010C5DC;
+			remoteInfo = "Mert Polat";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41BC27F5293889600010C5DC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				41BC27F4293889600010C5DC /* Mert Polat.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		41BC27E7293889600010C5DC /* Mert Polat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mert Polat.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41BC27E9293889600010C5DC /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		41BC27EC293889600010C5DC /* AccountAuthenticationModificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAuthenticationModificationViewController.swift; sourceTree = "<group>"; };
+		41BC27EF293889600010C5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		41BC27F1293889600010C5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41FF97C0290014BF00B11FF5 /* FindMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FF97C3290014BF00B11FF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41FF97C5290014BF00B11FF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +65,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		41BC27E4293889600010C5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BC27EA293889600010C5DC /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FF97BD290014BF00B11FF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +84,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41BC27E8293889600010C5DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41BC27E9293889600010C5DC /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41BC27EB293889600010C5DC /* Mert Polat */ = {
+			isa = PBXGroup;
+			children = (
+				41BC27EC293889600010C5DC /* AccountAuthenticationModificationViewController.swift */,
+				41BC27EE293889600010C5DC /* MainInterface.storyboard */,
+				41BC27F1293889600010C5DC /* Info.plist */,
+			);
+			path = "Mert Polat";
+			sourceTree = "<group>";
+		};
 		41FF97B7290014BF00B11FF5 = {
 			isa = PBXGroup;
 			children = (
 				41FF97C2290014BF00B11FF5 /* FindMyCar */,
+				41BC27EB293889600010C5DC /* Mert Polat */,
+				41BC27E8293889600010C5DC /* Frameworks */,
 				41FF97C1290014BF00B11FF5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				41FF97C0290014BF00B11FF5 /* FindMyCar.app */,
+				41BC27E7293889600010C5DC /* Mert Polat.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +140,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		41BC27E6293889600010C5DC /* Mert Polat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41BC27F8293889600010C5DC /* Build configuration list for PBXNativeTarget "Mert Polat" */;
+			buildPhases = (
+				41BC27E3293889600010C5DC /* Sources */,
+				41BC27E4293889600010C5DC /* Frameworks */,
+				41BC27E5293889600010C5DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mert Polat";
+			productName = "Mert Polat";
+			productReference = 41BC27E7293889600010C5DC /* Mert Polat.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		41FF97BF290014BF00B11FF5 /* FindMyCar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41FF97D7290014C000B11FF5 /* Build configuration list for PBXNativeTarget "FindMyCar" */;
@@ -85,10 +164,12 @@
 				41FF97BC290014BF00B11FF5 /* Sources */,
 				41FF97BD290014BF00B11FF5 /* Frameworks */,
 				41FF97BE290014BF00B11FF5 /* Resources */,
+				41BC27F5293889600010C5DC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				41BC27F3293889600010C5DC /* PBXTargetDependency */,
 			);
 			name = FindMyCar;
 			packageProductDependencies = (
@@ -105,9 +186,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					41BC27E6293889600010C5DC = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					41FF97BF290014BF00B11FF5 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -130,11 +214,20 @@
 			projectRoot = "";
 			targets = (
 				41FF97BF290014BF00B11FF5 /* FindMyCar */,
+				41BC27E6293889600010C5DC /* Mert Polat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		41BC27E5293889600010C5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BC27F0293889600010C5DC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FF97BE290014BF00B11FF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +241,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		41BC27E3293889600010C5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BC27ED293889600010C5DC /* AccountAuthenticationModificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FF97BC290014BF00B11FF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,7 +263,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		41BC27F3293889600010C5DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41BC27E6293889600010C5DC /* Mert Polat */;
+			targetProxy = 41BC27F2293889600010C5DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		41BC27EE293889600010C5DC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41BC27EF293889600010C5DC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		41FF97C9290014BF00B11FF5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -182,6 +299,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		41BC27F6293889600010C5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAFK6J8VYM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mert Polat/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mert Polat";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mertpolat.FindMyCar.Mert-Polat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41BC27F7293889600010C5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAFK6J8VYM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mert Polat/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mert Polat";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mertpolat.FindMyCar.Mert-Polat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		41FF97D5290014C000B11FF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -299,6 +468,7 @@
 		41FF97D8290014C000B11FF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +497,7 @@
 		41FF97D9290014C000B11FF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		41BC27F8293889600010C5DC /* Build configuration list for PBXNativeTarget "Mert Polat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41BC27F6293889600010C5DC /* Debug */,
+				41BC27F7293889600010C5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41FF97BB290014BF00B11FF5 /* Build configuration list for PBXProject "FindMyCar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -20,12 +20,15 @@ class ViewController: UIViewController {
         entryTextView.layer.cornerRadius = 10
         
         let Text = defaults.object(forKey: "Text")
-        ResulttextView.text = (Text as! String)
+        ResulttextView.text = Text as? String
         
-        let entryText =    UserDefaults.standard.object(forKey: "entry")
+        let entryText = UserDefaults.standard.object(forKey: "entry")
         entryTextView.text = entryText as? String
          
     }
+    
+    @IBOutlet weak var resetButton: UIBarButtonItem!
+    
     @IBOutlet weak var photo: UIImageView!
     @IBAction func cameraButtonPressed(_ sender: UIButton) {
         
@@ -43,6 +46,18 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(entryTextView.text, forKey: "entry")
         
         defaults.set(ResulttextView.text, forKey: "Text")
+        
+    }
+    
+    
+    @IBAction func resetButtonClicked(_ sender: UIBarButtonItem) {
+        
+        entryTextView.text = ""
+        ResulttextView.text = ""
+        
+        UserDefaults.standard.removeObject(forKey: "entry")
+        UserDefaults.standard.removeObject(forKey: "Text")
+     
         
     }
     
